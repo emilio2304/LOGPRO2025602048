@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Donas"/>
+        <attribute name="authors" value="Usuario"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-26 08:03:04 p. m."/>
+        <attribute name="created" value="VXN1YXJpbztERVNLVE9QLTc1VFRENUY7MjAyNS0wMy0yNjswNzo0NDozMCBwLiBtLjszMjY0"/>
+        <attribute name="edited" value="VXN1YXJpbztERVNLVE9QLTc1VFRENUY7MjAyNS0wMy0yNjswODowMzowNCBwLiBtLjsxOzMzNjk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="A&#241;o" type="Integer" array="False" size=""/>
+            <input variable="A&#241;o"/>
+            <if expression="A&#241;o % 4 == 0">
+                <then>
+                    <output expression="&quot;Es bisiesto&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;No es Bisiesto&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

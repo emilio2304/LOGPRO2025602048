@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Donas"/>
+        <attribute name="authors" value="Usuario"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-26 09:26:30 p. m."/>
+        <attribute name="created" value="VXN1YXJpbztERVNLVE9QLTc1VFRENUY7MjAyNS0wMy0yNjswOTowMzowNyBwLiBtLjszMjY1"/>
+        <attribute name="edited" value="VXN1YXJpbztERVNLVE9QLTc1VFRENUY7MjAyNS0wMy0yNjswOToyNjozMCBwLiBtLjsxOzMzNzQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Total, Donas, Cantidad" type="Integer" array="False" size=""/>
+            <assign variable="Donas" expression="10"/>
+            <input variable="Cantidad"/>
+            <if expression="Cantidad&gt;49">
+                <then>
+                    <assign variable="Total" expression="(Cantidad*Donas)-(Cantidad*2)"/>
+                    <output expression="Total" newline="True"/>
+                </then>
+                <else>
+                    <if expression="Cantidad&gt;29">
+                        <then>
+                            <assign variable="Total" expression="(Cantidad*Donas)-(Cantidad*1)"/>
+                            <output expression="Total" newline="True"/>
+                        </then>
+                        <else>
+                            <assign variable="Total" expression="(Cantidad*Donas)"/>
+                            <output expression="Total" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
