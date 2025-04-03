@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Ejercicio 2"/>
+        <attribute name="authors" value="Usuario"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-01 08:18:14 p. m."/>
+        <attribute name="created" value="VXN1YXJpbztERVNLVE9QLTc1VFRENUY7MjAyNS0wNC0wMTswNzoyNjoxMCBwLiBtLjszMjU2"/>
+        <attribute name="edited" value="VXN1YXJpbztERVNLVE9QLTc1VFRENUY7MjAyNS0wNC0wMTswODoxODoxNCBwLiBtLjsxOzMzNzA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Edad" type="Integer" array="False" size=""/>
+            <input variable="Edad"/>
+            <if expression="Edad &gt;=18">
+                <then>
+                    <output expression="&quot;Pagas 500&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="Edad &gt;=4">
+                        <then>
+                            <output expression="&quot;Pagas 200&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="Edad &gt;=0">
+                                <then>
+                                    <output expression="&quot;Entras gratis&quot;" newline="True"/>
+                                </then>
+                                <else/>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
