@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Pizzas"/>
+        <attribute name="authors" value="Usuario"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-06 11:41:18 a. m."/>
+        <attribute name="created" value="VXN1YXJpbztERVNLVE9QLTc1VFRENUY7MjAyNS0wNC0wNjsxMDozOTo1MyBhLiBtLjszMjUx"/>
+        <attribute name="edited" value="VXN1YXJpbztERVNLVE9QLTc1VFRENUY7MjAyNS0wNC0wNjsxMTo0MToxOCBhLiBtLjsxOzMzNTQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Opc1, Opc2" type="Integer" array="False" size=""/>
+            <declare name="Ingredientes, Pizza" type="String" array="False" size=""/>
+            <output expression="&quot;Bienvenido a Pizzeria Bella Napoli&quot;" newline="True"/>
+            <output expression="&quot;Escoja un tipo de pizza:&quot;" newline="True"/>
+            <output expression="&quot;1.Vegetariana&quot;" newline="True"/>
+            <output expression="&quot;2.No vegetariana&quot;" newline="True"/>
+            <input variable="Opc1"/>
+            <if expression="Opc1 == 1 || Opc1 == 2">
+                <then>
+                    <if expression="Opc1 == 1">
+                        <then>
+                            <assign variable="Pizza" expression="&quot;Vegetariana&quot;"/>
+                            <output expression="&quot;Escoga un ingrediente: 1.Pimientos 2.Todo&quot;" newline="True"/>
+                            <input variable="Opc2"/>
+                            <if expression="Opc2 == 1 || Opc2 == 2">
+                                <then>
+                                    <if expression="Opc2 == 1">
+                                        <then>
+                                            <assign variable="Ingredientes" expression="&quot;Pimientos&quot;"/>
+                                        </then>
+                                        <else>
+                                            <assign variable="Ingredientes" expression="&quot;Todo&quot;"/>
+                                        </else>
+                                    </if>
+                                    <output expression="&quot;Pizza:&quot; &amp; Pizza &amp; &quot; Ingredientes: Tomate, Mozzarela y &quot; &amp; Ingredientes" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;ERROR invalido&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <assign variable="Pizza" expression="&quot;No vegetariana&quot;"/>
+                            <output expression="&quot;Escoga un ingrediente: 1.Peperoni 2.Jamon 3.Salmon&quot;" newline="True"/>
+                            <input variable="Opc2"/>
+                            <if expression="Opc2 == 1|| Opc2 == 2 || Opc2 == 3">
+                                <then>
+                                    <if expression="Opc2 == 1">
+                                        <then>
+                                            <assign variable="Ingredientes" expression="&quot;Peperoni&quot;"/>
+                                        </then>
+                                        <else>
+                                            <if expression="Opc2 == 2">
+                                                <then>
+                                                    <assign variable="Ingredientes" expression="&quot;Jamon&quot;"/>
+                                                </then>
+                                                <else>
+                                                    <assign variable="Ingredientes" expression="&quot;Salmon&quot;"/>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                    <output expression="&quot;Pizza:&quot; &amp; Pizza &amp; &quot; Ingredientes: Tomate, Mozzarela y &quot; &amp; Ingredientes" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;ERROR invalido&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </then>
+                <else/>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
