@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Tarea2025_04_09_1300"/>
+        <attribute name="authors" value="Usuario"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-08 07:33:51 p. m."/>
+        <attribute name="created" value="VXN1YXJpbztERVNLVE9QLTc1VFRENUY7MjAyNS0wNC0wODswNzoyMDoxNCBwLiBtLjszMjYx"/>
+        <attribute name="edited" value="VXN1YXJpbztERVNLVE9QLTc1VFRENUY7MjAyNS0wNC0wODswNzozMzo1MSBwLiBtLjsxOzMzNzQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a" type="Integer" array="False" size=""/>
+            <declare name="b" type="Integer" array="False" size=""/>
+            <declare name="c" type="Integer" array="False" size=""/>
+            <declare name="d" type="Integer" array="False" size=""/>
+            <declare name="e" type="Integer" array="False" size=""/>
+            <assign variable="d" expression="1"/>
+            <assign variable="e" expression="2"/>
+            <assign variable="a" expression="1"/>
+            <assign variable="c" expression="1"/>
+            <while expression="a&lt;=64">
+                <output expression="d" newline="True"/>
+                <assign variable="c" expression="d+e"/>
+                <assign variable="d" expression="e"/>
+                <assign variable="e" expression="c"/>
+                <assign variable="a" expression="a+1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
